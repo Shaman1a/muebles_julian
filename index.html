@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muebles Elegancia | Diseño y Confort</title>
+
+    <!-- FUENTE -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #4a2c1d;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1582582494700-00f4b6bbfc36');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #4a2c1d;
+        }
+
+        .about p {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            padding: 15px;
+            color: #4a2c1d;
+        }
+
+        .card p {
+            padding: 0 15px 20px;
+            font-size: 14px;
+        }
+
+        .services ul {
+            max-width: 700px;
+            margin: auto;
+            list-style: none;
+        }
+
+        .services li {
+            background: white;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-left: 5px solid #4a2c1d;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact input, .contact textarea {
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact button {
+            background-color: #4a2c1d;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #2b1a12;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Muebles Elegancia</h1>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#productos">Productos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <div>
+        <h2>Diseño y confort para tu hogar</h2>
+        <p>Muebles de calidad, estilo y durabilidad</p>
+    </div>
+</section>
+
+<section class="about" id="nosotros">
+    <h2>Quiénes Somos</h2>
+    <p>
+        Somos una empresa dedicada a la fabricación y comercialización de muebles para el hogar y la oficina. 
+        Nos caracterizamos por ofrecer productos de alta calidad, combinando diseño moderno, funcionalidad 
+        y materiales resistentes que garantizan la satisfacción de nuestros clientes.
+    </p>
+</section>
+
+<section id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="products">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1616627989959-2a35e6bbf16e" alt="Sala">
+            <h3>Salas</h3>
+            <p>Diseños modernos y cómodos para compartir en familia.</p>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1598300053654-b4f47e7c346b" alt="Comedor">
+            <h3>Comedores</h3>
+            <p>Elegancia y funcionalidad para tus espacios.</p>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600489000022-c2086d79f9d4" alt="Dormitorio">
+            <h3>Dormitorios</h3>
+            <p>Confort y descanso con estilo único.</p>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1585559602708-62bb06f12b5b" alt="Oficina">
+            <h3>Oficinas</h3>
+            <p>Muebles ergonómicos para mayor productividad.</p>
+        </div>
+    </div>
+</section>
+
+<section class="services" id="servicios">
+    <h2>Servicios</h2>
+    <ul>
+        <li>Fabricación de muebles personalizados</li>
+        <li>Entrega a domicilio</li>
+        <li>Instalación profesional</li>
+        <li>Garantía y soporte</li>
+    </ul>
+</section>
+
+<section class="contact" id="contacto">
+    <h2>Contacto</h2>
+    <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea rows="5" placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar mensaje</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Muebles Elegancia | Proyecto Universitario</p>
+</footer>
+
+</body>
+</html>
